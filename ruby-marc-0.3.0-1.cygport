@@ -1,0 +1,18 @@
+ORIG_PN="marc"
+inherit ruby
+
+DESCRIPTION="Ruby Machine Readable Cataloging library"
+HOMEPAGE="http://marc.rubyforge.org/"
+SRC_URI="mirror://rubyforge/marc/marc-${PV}.gem"
+
+src_compile() { :; }
+
+src_test() {
+	cd ${S}
+	rake
+}
+
+src_install() {
+	cd ${S}
+	doruby lib/*
+}
