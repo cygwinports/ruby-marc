@@ -1,0 +1,5 @@
+inherit rubygem
+
+
+DESCRIPTION="marc is a Ruby library for reading and writing MAchine Readable
+Cataloging (MARC)."
