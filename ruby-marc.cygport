@@ -1,9 +1,13 @@
 inherit rubygem
 
 NAME="ruby-marc"
-VERSION=0.5.1
+VERSION=0.7.1
 RELEASE=1
 CATEGORY="Ruby"
 SUMMARY="Ruby MARC parser library"
 DESCRIPTION="marc is a Ruby library for reading and writing MAchine Readable
 Cataloging (MARC)."
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_marc_CONTENTS=${RUBYGEM_INSTDIR#/}" "${RUBYGEM_SPEC#/}
+ruby_marc_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
