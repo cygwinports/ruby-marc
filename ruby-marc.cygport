@@ -8,6 +8,8 @@ SUMMARY="Ruby MARC parser library"
 DESCRIPTION="marc is a Ruby library for reading and writing MAchine Readable
 Cataloging (MARC)."
 
+ARCH=noarch
+
 PKG_NAMES="${NAME} ${NAME}-doc"
 ruby_marc_CONTENTS=${RUBYGEM_INSTDIR#/}" "${RUBYGEM_SPEC#/}
 ruby_marc_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
